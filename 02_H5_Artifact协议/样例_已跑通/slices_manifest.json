@@ -1,0 +1,70 @@
+{
+  "slices": [
+    {
+      "index": 1,
+      "y_start": 0,
+      "y_end": 2321,
+      "modules": [
+        {
+          "module_id": "hero_placeholder_01",
+          "component_id": "hero_placeholder",
+          "overlap_height": 598
+        },
+        {
+          "module_id": "activity_intro_01",
+          "component_id": "activity_intro",
+          "overlap_height": 442
+        },
+        {
+          "module_id": "how_to_join_01",
+          "component_id": "how_to_join",
+          "overlap_height": 386
+        },
+        {
+          "module_id": "task_list_01",
+          "component_id": "task_list",
+          "overlap_height": 895
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "y_start": 2321,
+      "y_end": 3965,
+      "modules": [
+        {
+          "module_id": "reward_grid_01",
+          "component_id": "reward_grid",
+          "overlap_height": 932
+        },
+        {
+          "module_id": "leaderboard_01",
+          "component_id": "leaderboard",
+          "overlap_height": 712
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "y_start": 3965,
+      "y_end": 4947,
+      "modules": [
+        {
+          "module_id": "faq_01",
+          "component_id": "faq",
+          "overlap_height": 544
+        },
+        {
+          "module_id": "final_cta_01",
+          "component_id": "final_cta",
+          "overlap_height": 294
+        },
+        {
+          "module_id": "footer_01",
+          "component_id": "footer",
+          "overlap_height": 144
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": "0.1",
+  "purpose": "Codex local H5 agent executable skill bundle",
+  "skills": {
+    "component_execution": {
+      "path": "H5_Agent_组件Skill_执行版_v0.1.md",
+      "role": "component selection, HTML structure, cut hints, quality rules"
+    },
+    "theme_execution": {
+      "path": "H5_Agent_主题Skill_执行版_v0.1.md",
+      "role": "KV style contract, module visual plan"
+    },
+    "slicing_execution": {
+      "path": "H5_Agent_切图Skill_执行版_v0.1.md",
+      "role": "slice planning, module-boundary cut strategy, reference band budget"
+    },
+    "generation_prompt_execution": {
+      "path": "H5_Agent_生图PromptSkill_执行版_v0.1.md",
+      "role": "Image2 segment prompt contract, continuity wording, prompt quality rules"
+    },
+    "component_registry": {
+      "path": "component_registry_v0.1.json",
+      "role": "machine-readable component registry"
+    }
+  },
+  "archives": {
+    "original_skills_dir": "../archive/original_skills",
+    "note": "Original user-provided skills are kept for traceability only. They are not execution inputs for the current local Agent."
+  },
+  "pipeline_contract": {
+    "prototype": [
+      "Read component_execution",
+      "Read component_registry",
+      "Generate blueprint JSON before HTML",
+      "Render HTML with data-section, data-component, data-no-cut and data-cut-after"
+    ],
+    "theme": [
+      "Read theme_execution",
+      "Select KV mode",
+      "Generate style contract",
+      "Generate module visual plan"
+    ],
+    "slicing": [
+      "Read slicing_execution",
+      "Use data-cut-after first",
+      "Use module boundaries second",
+      "Never cut data-no-cut sections",
+      "Reserve reference band height before Image2 continuation"
+    ],
+    "generation_prompt": [
+      "Read generation_prompt_execution",
+      "Read theme_execution outputs as mandatory prompt inputs",
+      "Use prototype slices as layout references",
+      "Use KV/style contract as visual references",
+      "Merge module_visual_plan into each segment prompt",
+      "Describe continuation strips without visible pixel numbers"
+    ],
+    "quality": [
+      "Validate HTML structure",
+      "Validate component coverage",
+      "Validate cut positions",
+      "Validate theme consistency"
+    ]
+  }
+}

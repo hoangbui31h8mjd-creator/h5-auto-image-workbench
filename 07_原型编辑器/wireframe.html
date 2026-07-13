@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<style>
+:root{
+  --color-background-primary:#ffffff;
+  --color-background-secondary:#f5f4ef;
+  --color-background-tertiary:#ebe9e1;
+  --color-border-secondary:rgba(0,0,0,0.3);
+  --color-text-primary:#1a1a18;
+  --color-text-secondary:#5f5e5a;
+  --color-text-tertiary:#9a988f;
+  --font-sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+  --border-radius-md:8px;
+}
+body{margin:0;background:#d9d7cf;padding:24px;font-family:var(--font-sans)}
+.wf{max-width:360px;margin:0 auto;font-family:var(--font-sans);background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);overflow:hidden}
+.wf *{box-sizing:border-box}
+.sec{border-bottom:1px dashed var(--color-border-secondary);padding:12px 14px}
+.tag{font-size:10px;color:var(--color-text-tertiary);letter-spacing:.05em;text-transform:uppercase;margin:0 0 8px}
+.box{background:var(--color-background-tertiary);border:1px solid var(--color-border-secondary);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--color-text-tertiary);font-size:11px;text-align:center}
+.ln{height:8px;background:var(--color-background-tertiary);border-radius:2px;margin:5px 0}
+.btnw{border:1px solid var(--color-text-tertiary);border-radius:4px;text-align:center;font-size:11px;color:var(--color-text-secondary);padding:8px;display:flex;align-items:center;justify-content:center;gap:4px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.g2{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.cap{font-size:10px;color:var(--color-text-tertiary);text-align:center;margin-top:3px}
+.row{display:flex;justify-content:space-between;align-items:center}
+.chip{font-size:10px;color:var(--color-text-tertiary);border:1px solid var(--color-border-secondary);border-radius:999px;padding:3px 9px}
+</style>
+</head>
+<body>
+<div class="wf">
+
+  <div class="sec" style="padding:7px 14px">
+    <div class="row" style="font-size:10px;color:var(--color-text-tertiary)"><span>○ 状态栏 9:41</span><span>⌗ ⌕ ⋯</span></div>
+  </div>
+
+  <div class="sec" style="padding:8px 14px">
+    <p class="tag" style="margin:0 0 6px">导航栏 navbar</p>
+    <div class="row"><span style="font-size:11px;color:var(--color-text-tertiary)">‹ 返回</span><span style="font-size:11px;color:var(--color-text-secondary)">中秋国庆逛吃指南</span><span style="font-size:11px;color:var(--color-text-tertiary)">分享 ↗</span></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">① 顶栏 / banner 主视觉</p>
+    <div class="box" style="height:110px;flex-direction:column;gap:6px">
+      <span>[ 活动主视觉图 KV ]</span>
+      <span style="font-size:10px">主标题 + 副标题</span>
+      <span class="chip">活动时间 9.11 – 10.8</span>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">② 活动说明 文字段</p>
+    <div class="ln" style="width:100%"></div>
+    <div class="ln" style="width:92%"></div>
+    <div class="ln" style="width:70%"></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">③ 玩法模块 (2 条规则)</p>
+    <div class="box" style="height:62px;margin-bottom:6px;flex-direction:column;align-items:flex-start;padding:8px 10px;justify-content:center">
+      <span style="color:var(--color-text-secondary)">① 优质内容官方助推</span>
+      <div class="ln" style="width:90%;margin:5px 0 0"></div>
+      <div class="ln" style="width:60%;margin:4px 0 0"></div>
+    </div>
+    <div class="box" style="height:62px;flex-direction:column;align-items:flex-start;padding:8px 10px;justify-content:center">
+      <span style="color:var(--color-text-secondary)">② 4大赛道 Dou+ 激励</span>
+      <div class="ln" style="width:90%;margin:5px 0 0"></div>
+      <div class="ln" style="width:55%;margin:4px 0 0"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">④ 赛道分级表 (4 行)</p>
+    <div style="border:1px solid var(--color-border-secondary);border-radius:4px;overflow:hidden">
+      <div style="display:flex;border-bottom:1px solid var(--color-border-secondary);font-size:11px;color:var(--color-text-tertiary)"><div style="flex:1;padding:7px 10px;border-right:1px solid var(--color-border-secondary)">新锐榜</div><div style="flex:1.4;padding:7px 10px">0~5W 粉丝</div></div>
+      <div style="display:flex;border-bottom:1px solid var(--color-border-secondary);font-size:11px;color:var(--color-text-tertiary)"><div style="flex:1;padding:7px 10px;border-right:1px solid var(--color-border-secondary)">成长榜</div><div style="flex:1.4;padding:7px 10px">5~10W 粉丝</div></div>
+      <div style="display:flex;border-bottom:1px solid var(--color-border-secondary);font-size:11px;color:var(--color-text-tertiary)"><div style="flex:1;padding:7px 10px;border-right:1px solid var(--color-border-secondary)">人气榜</div><div style="flex:1.4;padding:7px 10px">10~100W 粉丝</div></div>
+      <div style="display:flex;font-size:11px;color:var(--color-text-tertiary)"><div style="flex:1;padding:7px 10px;border-right:1px solid var(--color-border-secondary)">影响力榜</div><div style="flex:1.4;padding:7px 10px">>100W 粉丝</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑤ 奖励卡 (4 档)</p>
+    <div class="g2">
+      <div class="box" style="height:46px;flex-direction:column">1200 Dou+<span style="font-size:9px">TOP1</span></div>
+      <div class="box" style="height:46px;flex-direction:column">800 Dou+<span style="font-size:9px">TOP2-3</span></div>
+      <div class="box" style="height:46px;flex-direction:column">500 Dou+<span style="font-size:9px">TOP4-10</span></div>
+      <div class="box" style="height:46px;flex-direction:column">200 Dou+<span style="font-size:9px">TOP11-20</span></div>
+    </div>
+    <div class="ln" style="width:80%;margin-top:8px"></div>
+    <div class="ln" style="width:55%"></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑥ 参与方式 项目列表</p>
+    <div class="ln" style="width:60%"></div>
+    <div class="ln" style="width:85%"></div>
+    <div class="ln" style="width:78%"></div>
+    <div class="ln" style="width:50%"></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑦ 假期风向标 · 区块标题</p>
+    <div class="box" style="height:30px;width:60%;margin:0 auto">假期风向标 Let's go</div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑦-1 话题卡 · #国风赏月之旅</p>
+    <div style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px">
+      <div class="row" style="margin-bottom:6px"><span style="font-size:11px;color:var(--color-text-secondary)"># 赴一场国风赏月之旅</span><div class="btnw" style="padding:4px 10px">去发布 ›</div></div>
+      <div class="g3">
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">庐山瀑布</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">莫高窟</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">西安</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑦-2 话题卡 · #一人推荐赏月好处</p>
+    <div style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px">
+      <div class="row" style="margin-bottom:6px"><span style="font-size:11px;color:var(--color-text-secondary)"># 一人推荐一个赏月好处</span><div class="btnw" style="padding:4px 10px">去发布 ›</div></div>
+      <div class="g3">
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">庐山瀑布</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">莫高窟</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">西安</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑦-3 话题卡 · #打卡祖国大好河山</p>
+    <div style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px">
+      <div class="row" style="margin-bottom:6px"><span style="font-size:11px;color:var(--color-text-secondary)"># 趁国庆打卡祖国大好河山</span><div class="btnw" style="padding:4px 10px">去发布 ›</div></div>
+      <div class="g3">
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">庐山瀑布</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">莫高窟</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">西安</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑦-4 话题卡 · #吃货方式打开中秋</p>
+    <div style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px">
+      <div class="row" style="margin-bottom:6px"><span style="font-size:11px;color:var(--color-text-secondary)"># 用吃货的方式打开中秋国庆</span><div class="btnw" style="padding:4px 10px">去发布 ›</div></div>
+      <div class="g3">
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">庐山瀑布</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">莫高窟</div></div>
+        <div><div class="box" style="aspect-ratio:1">▶</div><div class="cap">西安</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑧ 获奖名单公示 (折叠/列表)</p>
+    <div class="row" style="margin-bottom:6px"><div class="ln" style="width:40%;margin:0"></div><span style="font-size:10px;color:var(--color-text-tertiary)">展开 ▾</span></div>
+    <div class="ln" style="width:90%"></div>
+    <div class="ln" style="width:75%"></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑨ 常见问题 FAQ (手风琴)</p>
+    <div class="row" style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px 10px;margin-bottom:5px"><span style="font-size:11px;color:var(--color-text-tertiary)">Q1 如何参与活动？</span><span style="font-size:11px;color:var(--color-text-tertiary)">+</span></div>
+    <div class="row" style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px 10px;margin-bottom:5px"><span style="font-size:11px;color:var(--color-text-tertiary)">Q2 Dou+ 何时发放？</span><span style="font-size:11px;color:var(--color-text-tertiary)">+</span></div>
+    <div class="row" style="border:1px solid var(--color-border-secondary);border-radius:4px;padding:8px 10px"><span style="font-size:11px;color:var(--color-text-tertiary)">Q3 投稿有什么要求？</span><span style="font-size:11px;color:var(--color-text-tertiary)">+</span></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑩ 活动规则 / 免责声明 文字段</p>
+    <div class="ln" style="width:100%"></div>
+    <div class="ln" style="width:96%"></div>
+    <div class="ln" style="width:88%"></div>
+    <div class="ln" style="width:45%"></div>
+  </div>
+
+  <div class="sec">
+    <p class="tag">⑪ 页脚 footer</p>
+    <div style="text-align:center"><div class="ln" style="width:55%;margin:5px auto"></div><div class="ln" style="width:35%;margin:5px auto"></div></div>
+  </div>
+
+  <div class="sec" style="border-bottom:none;background:var(--color-background-secondary)">
+    <p class="tag">⑫ 底部 CTA 吸底固定按钮</p>
+    <div class="btnw" style="padding:12px;border-width:2px;color:var(--color-text-primary)">分享假期里的逛吃日记 ›</div>
+  </div>
+
+</div>
+</body>
+</html>

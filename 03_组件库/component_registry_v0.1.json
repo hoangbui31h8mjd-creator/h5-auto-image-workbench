@@ -1,0 +1,111 @@
+{
+  "version": "0.1",
+  "canvas": {
+    "source_width": 828,
+    "agent_width": 828,
+    "scale": 1.0,
+    "content_width": 748,
+    "side_margin": 40
+  },
+  "components": [
+    {
+      "id": "hero_placeholder",
+      "name": "头图区占位",
+      "use_cases": ["all"],
+      "required_fields": ["headline", "subheadline"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "activity_intro",
+      "name": "活动介绍",
+      "use_cases": ["all"],
+      "required_fields": ["title", "body"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "how_to_join",
+      "name": "参与方式",
+      "use_cases": ["task_campaign", "challenge_campaign"],
+      "required_fields": ["steps", "rules_summary"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "task_list",
+      "name": "任务列表",
+      "use_cases": ["task_campaign", "game_campaign"],
+      "required_fields": ["tasks", "reward", "progress", "action"],
+      "row_height": 152,
+      "no_cut": true,
+      "cut_after": "group_end"
+    },
+    {
+      "id": "reward_grid",
+      "name": "奖励卡片/奖励网格",
+      "use_cases": ["all"],
+      "required_fields": ["reward_name", "reward_value"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "leaderboard",
+      "name": "排行榜",
+      "use_cases": ["ranking_campaign", "game_campaign"],
+      "required_fields": ["rank", "user", "score"],
+      "row_height": 116,
+      "no_cut": true,
+      "cut_after": "group_end"
+    },
+    {
+      "id": "video_grid",
+      "name": "视频卡片",
+      "use_cases": ["ugc_campaign", "content_campaign"],
+      "required_fields": ["video_placeholder", "caption"],
+      "no_cut": true,
+      "cut_after": "group_end"
+    },
+    {
+      "id": "hashtag_section",
+      "name": "Hashtag 拍摄",
+      "use_cases": ["ugc_campaign"],
+      "required_fields": ["hashtag", "instruction", "user_cards"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "lottery_cards",
+      "name": "抽奖翻卡",
+      "use_cases": ["lottery_campaign"],
+      "required_fields": ["cards", "remaining_chances", "action"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "use_cases": ["all"],
+      "required_fields": ["questions"],
+      "no_cut": false,
+      "item_no_cut": true,
+      "cut_after": "item_end"
+    },
+    {
+      "id": "final_cta",
+      "name": "最终 CTA",
+      "use_cases": ["all"],
+      "required_fields": ["button_text"],
+      "no_cut": true,
+      "cut_after": "preferred"
+    },
+    {
+      "id": "footer",
+      "name": "尾标/规则收口",
+      "use_cases": ["all"],
+      "required_fields": ["legal_or_note"],
+      "no_cut": true,
+      "cut_after": "end"
+    }
+  ]
+}

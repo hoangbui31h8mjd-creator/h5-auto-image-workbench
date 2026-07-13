@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-07-09T04:41:58",
+  "generator": "codex-local-mvp-rule-based",
+  "page": {
+    "width": 828,
+    "content_width": 748,
+    "side_margin": 40,
+    "source_width": 828,
+    "scale": 1.0,
+    "target_language": "pt-BR",
+    "height_strategy": "content_driven"
+  },
+  "source": {
+    "kv_path": "/Users/yiming/Desktop/h5自动生图项目文档（正在跑）/01_当前工作区/02_Codex本地Agent工作区/99_暂不启用与原始备份/历史测试样例_不自动运行/产品包发布前清理_20260707/01_用户输入区/当前任务/kv.jpg",
+    "copy_excerpt": "# Desafio de Suprimentos de Verão\n\n## Nome da atividade\n\nDesafio de Suprimentos de Verão\n\n## Contexto da atividade\n\nUm jogo mobile de tiro para mercados internacionais vai lançar um evento especial de verão. Durante o evento, jogadores podem entrar diariamente, completar partidas, participar de desafios em equipe e acumular pontos para desbloquear recompensas limitadas.\n\n## Objetivos da atividade\n\n- Trazer jogadores veteranos e retornantes de volta ao jogo.\n- Incentivar a conclusão de missões diárias.\n- Aumentar a participação em equipe.\n- Usar uma trilha de recompensas para estimular particip",
+    "requirements_excerpt": "# Requisitos especiais\n\n- Usar português brasileiro (`pt-BR`) em toda a cópia visível para usuários.\n- Manter a experiência com sensação de verão, suprimentos, competição e recompensa.\n- Preservar uma estética madura, tática e intensa; evitar aparência infantil.\n"
+  },
+  "brief": {
+    "title": "Desafio de Suprimentos de Verão",
+    "subtitle": "Complete missoes, jogue em equipe e desbloqueie recompensas exclusivas.",
+    "audience": "Jogadores ativos e retornantes",
+    "tone": "Competitivo, intenso, com foco em recompensa",
+    "keywords": [
+      "task",
+      "ranking",
+      "reward",
+      "team"
+    ],
+    "tasks": [
+      {
+        "title": "Entrar no jogo hoje",
+        "reward": "+50 pontos",
+        "progress": 100,
+        "action": "Resgatar"
+      },
+      {
+        "title": "Jogar 2 partidas",
+        "reward": "+80 pontos",
+        "progress": 66,
+        "action": "Ir"
+      },
+      {
+        "title": "Completar desafio em equipe",
+        "reward": "+120 pontos",
+        "progress": 48,
+        "action": "Entrar"
+      },
+      {
+        "title": "Convidar aliados para o esquadrão",
+        "reward": "+150 pontos",
+        "progress": 25,
+        "action": "Convidar"
+      }
+    ],
+    "rewards": [
+      {
+        "name": "Skin de arma limitada",
+        "value": "500 pontos"
+      },
+      {
+        "name": "Moldura de avatar de verão",
+        "value": "700 pontos"
+      },
+      {
+        "name": "Caixa de suprimentos",
+        "value": "300 pontos"
+      },
+      {
+        "name": "Passe premium de teste",
+        "value": "900 pontos"
+      },
+      {
+        "name": "Título exclusivo do ranking",
+        "value": "Top 100"
+      }
+    ]
+  },
+  "theme_plan": {
+    "kv_mode": "hero_asset",
+    "target_language": "pt-BR",
+    "style_contract": {
+      "main_colors": [
+        "#15120E",
+        "#2A241C",
+        "#F2F0EA"
+      ],
+      "accent_colors": [
+        "#E5A72F",
+        "#F7D978"
+      ],
+      "material": [
+        "rugged metal",
+        "smoke",
+        "dust",
+        "battle-worn panels"
+      ],
+      "edge": "hard metal cuts with worn texture",
+      "lighting": "warm dusk backlight with amber highlights",
+      "perspective": "front-facing mobile UI with occasional heroic low-angle imagery",
+      "texture": "grunge realistic game campaign texture"
+    },
+    "visual_motifs": [
+      "gold reward",
+      "mission badge",
+      "dark tactical panel",
+      "smoke and dust",
+      "squad signal",
+      "rank emblem"
+    ],
+    "module_visual_plan": [
+      {
+        "module_id": "hero_placeholder_01",
+        "component_id": "hero_placeholder",
+        "visual_role": "首屏主视觉",
+        "background_theme": "KV-led battlefield hero area",
+        "main_elements": [
+          "hero title plate",
+          "smoke depth",
+          "gold challenge accent"
+        ],
+        "component_treatment": "If KV mode is hero_asset or locked_asset, preserve the KV position as the first-screen anchor.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "activity_intro_01",
+        "component_id": "activity_intro",
+        "visual_role": "活动说明区",
+        "background_theme": "dark intro panel with restrained texture",
+        "main_elements": [
+          "version badge",
+          "short benefit copy",
+          "subtle amber divider"
+        ],
+        "component_treatment": "Keep headline and intro copy readable; use visual weight without crowding the text.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "how_to_join_01",
+        "component_id": "how_to_join",
+        "visual_role": "参与机制区",
+        "background_theme": "instruction card with tactical chips",
+        "main_elements": [
+          "mission tags",
+          "rule panel",
+          "soft metal border"
+        ],
+        "component_treatment": "Turn chips and explanation into a compact participation guide.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "task_list_01",
+        "component_id": "task_list",
+        "visual_role": "任务推进区",
+        "background_theme": "stacked mission panels",
+        "main_elements": [
+          "mission badge",
+          "progress bar",
+          "gold CTA button"
+        ],
+        "component_treatment": "Keep the vertical task list, progress bars, reward values and button positions.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "reward_grid_01",
+        "component_id": "reward_grid",
+        "visual_role": "奖励展示区",
+        "background_theme": "reward showcase grid",
+        "main_elements": [
+          "gold coins",
+          "supply crate",
+          "amber rim light"
+        ],
+        "component_treatment": "Keep the grid count and item hierarchy; make placeholders into reward props.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "leaderboard_01",
+        "component_id": "leaderboard",
+        "visual_role": "竞技排行区",
+        "background_theme": "ranking board panel",
+        "main_elements": [
+          "rank number",
+          "player avatar",
+          "competitive emblem"
+        ],
+        "component_treatment": "Keep rows aligned and scores readable; emphasize ranking feedback.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "faq_01",
+        "component_id": "faq",
+        "visual_role": "规则答疑区",
+        "background_theme": "minimal readable rule panel",
+        "main_elements": [
+          "accordion rows",
+          "thin dividers",
+          "low-contrast texture"
+        ],
+        "component_treatment": "Reduce visual complexity so FAQ text stays legible.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "final_cta_01",
+        "component_id": "final_cta",
+        "visual_role": "最终转化区",
+        "background_theme": "high-contrast CTA close",
+        "main_elements": [
+          "large gold CTA",
+          "battlefield glow",
+          "closing badge"
+        ],
+        "component_treatment": "Make the final action obvious and centered without adding extra modules.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      },
+      {
+        "module_id": "footer_01",
+        "component_id": "footer",
+        "visual_role": "底部规则区",
+        "background_theme": "quiet legal/footer area",
+        "main_elements": [
+          "small rule text",
+          "subtle divider",
+          "muted texture"
+        ],
+        "component_treatment": "Keep the footer compact, readable, and visually secondary.",
+        "continuity": "Match the page tone: Competitivo, intenso, com foco em recompensa"
+      }
+    ],
+    "negative_visual_rules": [
+      "Avoid unrelated cartoon elements.",
+      "Transform low-fidelity placeholders into finished visual modules instead of keeping a plain gray draft look.",
+      "Render only final user-facing campaign content; exclude internal production annotations, measurements, and debug labels.",
+      "Avoid duplicating the KV as a repeated banner in later segments.",
+      "Preserve module order, card count, CTA location, and reading hierarchy."
+    ]
+  },
+  "modules": [
+    {
+      "id": "hero_placeholder_01",
+      "component_id": "hero_placeholder",
+      "name": "头图区占位",
+      "purpose": "预留首屏主视觉区域，表达活动主题和版本感",
+      "no_cut": true,
+      "cut_after": "preferred",
+      "required_fields": [
+        "headline",
+        "subheadline"
+      ]
+    },
+    {
+      "id": "activity_intro_01",
+      "component_id": "activity_intro",
+      "name": "活动介绍",
+      "purpose": "说明活动核心利益和目标",
+      "no_cut": true,
+      "cut_after": "preferred",
+      "required_fields": [
+        "title",
+        "body"
+      ]
+    },
+    {
+      "id": "how_to_join_01",
+      "component_id": "how_to_join",
+      "name": "参与方式",
+      "purpose": "解释参与路径和活动机制",
+      "no_cut": true,
+      "cut_after": "preferred",
+      "required_fields": [
+        "steps",
+        "rules_summary"
+      ]
+    },
+    {
+      "id": "task_list_01",
+      "component_id": "task_list",
+      "name": "任务列表",
+      "purpose": "展示每日任务、进度和领取动作",
+      "no_cut": true,
+      "cut_after": "group_end",
+      "required_fields": [
+        "tasks",
+        "reward",
+        "progress",
+        "action"
+      ]
+    },
+    {
+      "id": "reward_grid_01",
+      "component_id": "reward_grid",
+      "name": "奖励卡片/奖励网格",
+      "purpose": "展示可领取奖励和兑换目标",
+      "no_cut": true,
+      "cut_after": "preferred",
+      "required_fields": [
+        "reward_name",
+        "reward_value"
+      ]
+    },
+    {
+      "id": "leaderboard_01",
+      "component_id": "leaderboard",
+      "name": "排行榜",
+      "purpose": "展示竞争氛围和排名反馈",
+      "no_cut": true,
+      "cut_after": "group_end",
+      "required_fields": [
+        "rank",
+        "user",
+        "score"
+      ]
+    },
+    {
+      "id": "faq_01",
+      "component_id": "faq",
+      "name": "FAQ",
+      "purpose": "解释常见问题，降低参与门槛",
+      "no_cut": false,
+      "cut_after": "item_end",
+      "required_fields": [
+        "questions"
+      ]
+    },
+    {
+      "id": "final_cta_01",
+      "component_id": "final_cta",
+      "name": "最终 CTA",
+      "purpose": "收口转化，引导立即参与",
+      "no_cut": true,
+      "cut_after": "preferred",
+      "required_fields": [
+        "button_text"
+      ]
+    },
+    {
+      "id": "footer_01",
+      "component_id": "footer",
+      "name": "尾标/规则收口",
+      "purpose": "承载规则、免责声明和尾部信息",
+      "no_cut": true,
+      "cut_after": "end",
+      "required_fields": [
+        "legal_or_note"
+      ]
+    }
+  ],
+  "quality_rules": [
+    "Every main section must use data-section and data-component.",
+    "Do not render visible production words such as 安全区, 40px, 80px, 切口, 接缝, 续画, 拼接.",
+    "Prefer module-gap markers after sections for slicing.",
+    "Do not cut data-no-cut sections."
+  ]
+}
